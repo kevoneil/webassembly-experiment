@@ -6,5 +6,9 @@
   "repository": "git@github.com:tokyoincode/webassembly-experiment.git",
   "author": "Kevin O'Neil <kevinmoneil@me.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "wasm-loader": "^1.1.0",
+    "webpack": "^3.10.0"
+  }
 }
