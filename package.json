@@ -1,0 +1,10 @@
+{
+  "name": "webassembly-experiment",
+  "version": "0.0.1",
+  "description": "Testing out webassembly and webpack...among other things",
+  "main": "index.js",
+  "repository": "git@github.com:tokyoincode/webassembly-experiment.git",
+  "author": "Kevin O'Neil <kevinmoneil@me.com>",
+  "license": "MIT",
+  "private": true
+}
