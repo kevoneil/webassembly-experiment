@@ -30,4 +30,8 @@ npm run build
 
 ## Development
 
-If you would like to check out th
+To run webpack's development server:
+
+```
+npm run dev
+```
