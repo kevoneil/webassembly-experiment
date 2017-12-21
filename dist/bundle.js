@@ -72,11 +72,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_wasm__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_wasm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__add_wasm__);
 
+let addOne;
 
-__WEBPACK_IMPORTED_MODULE_0__add_wasm___default()().then(res => {
-  console.log(res.instance.exports.add_one());
-  // res.instance.add_one();
-});
+async function addModule() {
+  const addOne = await __WEBPACK_IMPORTED_MODULE_0__add_wasm___default()().then(res => res.instance.exports.add_one);
+  console.log(addOne(4));
+}
+
+addModule();
 
 
 /***/ }),

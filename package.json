@@ -9,10 +9,12 @@
   "private": true,
   "dependencies": {
     "wasm-loader": "^1.1.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack --config webpack.config.js",
-    "compile": "rustc +nightly --target wasm32-unknown-unknown -O ./add.rs --crate-type=cdylib"
+    "dev": "node_modules/.bin/webpack-dev-server --config webpack.config.js",
+    "compile": "rustc +nightly --target wasm32-unknown-unknown -O ./src/add.rs --crate-type=cdylib"
   }
 }
